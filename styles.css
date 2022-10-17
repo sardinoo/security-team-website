@@ -9,7 +9,7 @@
 /* nav */
 header {
     height: 200px;
-    background-color: #ffdab9;
+    background-color: peachpuff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,23 +25,46 @@ ul {
 a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 a:hover {
-    color: lightgray;
+    color: white;
 }
 
 /* intro */
 
-/* tech team */
+/* outer thing */
 .outer {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
 }
 
 .left {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 15px;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 15px;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
 }
 
 /* sec team */
@@ -54,21 +77,32 @@ a:hover {
     width: 70%;
     margin: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
 .bottom div {
-    width: 33%;
+    width: 28%;
     text-align: center;
 }
 
 .bottom div img {
-    width: 250px;
-    border-radius: 25px;
+    width: 175px;
+    height: 175px;
+    border-radius: 35px;
+}
+
+.bottom div img:hover {
+    opacity: 0.8;
+}
+
+.bottom div p {
+    font-size: 26px;
 }
 
 /* contact */
-#contact p {
+#contact h2 {
     text-align: center;
 }
 
@@ -82,12 +116,12 @@ form {
 
 input {
     width: 50%;
-    margin: auto;
+    margin: 4px auto 4px;
 }
 
 button {
     width: 10%;
-    margin: auto;
+    margin: 11px auto 0;
 }
 /* footer */
 
@@ -95,4 +129,13 @@ footer {
     height: 100px;
     background-color: #B9DEFF;
     text-align: center;
+}
+
+section {
+    background-color: linen;
+    padding-top: 20px;
+}
+
+section:last-of-type {
+    padding-bottom: 20px;
 }
