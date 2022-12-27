@@ -4,11 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "comic sans ms";
+    padding: 0;
 }
 
 /* nav */
 header {
-    height: 200px;
+    min-height: 200px;
     background-color: peachpuff;
     display: flex;
     justify-content: center;
@@ -138,4 +139,37 @@ section {
 
 section:last-of-type {
     padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0px;
+    }
+
+    a {
+        border-top: 1px black solid;
+    }
+    
+    a:last-of-type {
+        border-bottom: 1px black solid;
+    }
+
+    .outer {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .left {
+        width: auto;
+        margin: 0;
+    }
+
+    .right {
+        width: auto;
+        margin: 0;
+    }
 }
